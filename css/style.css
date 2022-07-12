@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-color: rgba(0, 0, 0, 0.993);
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor {
+  margin: auto;
+  max-width: 1200px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.623))), url(../img/fondoHeader.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623)), url(../img/fondoHeader.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header .secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.header .secciones a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.header .secciones a:hover {
+  background-color: rgba(255, 0, 0, 0.267);
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header .secciones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.inicio .carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inicio .carrusel .carousel {
+  width: 300px;
+  height: 350px;
+}
+
+.inicio .carrusel .carousel img {
+  padding-top: 5px;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+}
+
+.inicio .caracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+.inicio .caracteristicas p {
+  font-weight: bold;
+  text-align: left;
+}
+
+.servicios {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.623))), url(../img/backserv.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623)), url(../img/backserv.jpg);
+}
+
+.servicios h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.servicios .cortes h3 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.servicios .cortes .preciosCorte, .servicios .cortes .preciosBarba {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.servicios .cortes .preciosCorte p, .servicios .cortes .preciosBarba p {
+  font-size: 18px;
+  font-weight: bold;
+}

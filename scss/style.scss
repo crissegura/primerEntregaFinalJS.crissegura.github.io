@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+}
+.body{
+    background-color: rgba(0, 0, 0, 0.993);
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.contenedor{
+    margin: auto;
+    max-width: 1200px;
+    height: 100vh;
+    padding: 20px;
+}
+@import "_header.scss";
+@import "_inicio.scss";
+@import "_servicios.scss";
+@import "_sobreNosotros.scss";
+
+
+
+
