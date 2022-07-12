@@ -14,6 +14,7 @@
         <div class="secciones">
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
+            <a href="#seleccionaServicios">Sacá tu turno</a>
             <a href="#sobreNosotros">Sobre nosotros</a>
         </div>
     </header>
@@ -107,6 +108,36 @@
                     <p id="precioPelar">900</p>
                 </div>
             </div>
+        </section>
+        <section class="turnos contenedor" id="seleccionaServicios">
+            <h2>Solicitá tu reserva:</h2>
+            <form action="" class="form" id="form">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" id="nombre" required><br>
+                <h3>Podés seleccionar hasta 3 servicios.</h3>
+                <h4>Corte de cabello</h4>
+                <div>
+                    <input type="radio" name="CorteDeCabello" value="Corte adulto" id="corteAdulto">Corte adulto<br>
+                    <input type="radio" name="CorteDeCabello" value="Corte niño" id="corteNino">Corte niño<br>
+                    <input type="radio" name="CorteDeCabello" value="Pelar a #0" id="pelarCero">Pelar a #0<br>
+                    <input type="radio" name="CorteDeCabello" value="Corte y barba" id="corteYBarba">Corte y barba<br>
+                    <input type="radio" name="CorteDeCabello" value="Ninguno" id="ninguno">Ninguno
+                </div>
+                <h4>Barba</h4>
+                <div>
+                    <input type="radio" name="Barba" id="completa" value="Completa">Completa<br>
+                    <input type="radio" name="Barba" id="soloRebaje" value="Solo rebaje">Solo rebaje<br>
+                    <input type="radio" name="Barba" id="afeitar" value="Afeitar a #0">Afeitar a #0<br>
+                    <input type="radio" name="Barba" value="Ninguno" id="ninguno2">Ninguno
+                </div>
+                <h4>Tintura</h4>
+                <div>
+                    <input type="radio" name="tintura" id="tintura" value="Tintura">Tintura<br>
+                    <input type="radio" name="tintura" id="reflejos" value="Reflejos">Reflejos<br>
+                    <input type="radio" name="tintura" id="platinado" value="Platinado/rubio/gris">Platinado/rubio/gris<br>
+                    <input type="radio" name="tintura" value="Ninguno" id="ninguno3">Ninguno
+                </div>
+                <button type="button" id="enviar">Enviar</button>
+            </form>
         </section>
         <section class="sobreNosotros contenedor" id="sobreNosotros">
 

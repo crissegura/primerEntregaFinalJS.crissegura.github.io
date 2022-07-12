@@ -173,3 +173,55 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.turnos {
+  text-align: center;
+}
+
+.turnos h2 {
+  font-weight: bold;
+}
+
+.turnos .form input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.turnos .form h3 {
+  font-weight: bold;
+}
+
+.turnos .form h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.turnos .form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.turnos .form div input {
+  font-weight: bold;
+  margin: 30px;
+}
+
+.turnos .form #enviar {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.turnos .form #enviar:hover {
+  background-color: rgba(100, 148, 237, 0.541);
+  color: white;
+}
