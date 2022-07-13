@@ -1,0 +1,64 @@
+.sobreNosotros{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border:solid 2px white;
+    border-radius: 10px;
+    text-align: center;
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        .infoPeluKiate{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                text-align: center;
+            }
+            .mapubi{
+                display: flex;
+                justify-content: center;
+                img{
+                width: 300px;
+                border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+@media(min-width:992px){
+    .sobreNosotros{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border:solid 2px white;
+        border-radius: 10px;
+        h2{
+            text-align: center;
+            font-weight: bold;
+        }
+        div{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: baseline;
+            .infoPeluKiate{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                align-items: center;
+                p{
+                    text-align: center;
+                }
+                img{
+                    width: 400px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

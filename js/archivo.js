@@ -1,5 +1,7 @@
-let enviar = document.getElementById('enviar')
-enviar.addEventListener('click',recogerDatos)
+let enviar = document.getElementById('enviar');
+enviar.onclick = ()=>{
+    recogerDatos();
+}
 
 function recogerDatos(){
 
