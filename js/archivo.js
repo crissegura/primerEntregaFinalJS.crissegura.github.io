@@ -1,79 +1,46 @@
-let enviar = document.getElementById('enviar');
-enviar.onclick = ()=>{
-    recogerDatos();
+let precios = [
+    { trabajo: 'Corte adulto', precio: 800 },
+    { trabajo: 'Corte niño', precio: 600 },
+    { trabajo: 'Pelar a #0', precio: 400 },
+    { trabajo: 'Corte y barba', precio: 1100 },
+    { trabajo: 'Completa', precio: 400 },
+    { trabajo: 'Solo rebaje', precio: 250 },
+    { trabajo: 'Afeitar a #0', precio: 300 },
+    { trabajo: 'Tintura', precio: 500 },
+    { trabajo: 'Reflejos', precio: 750 },
+    { trabajo: 'Platinado/rubio/gris', precio: 900 },
+    { trabajo: 'Ninguno', precio: 0 },
+]
+let cliente = document.getElementById('nombreCliente')
+let servicio1 = document.getElementById('input1')
+let servicio2 = document.getElementById('input2')
+let servicio3 = document.getElementById('input3')
+let submit = document.getElementById('button')
+
+let precio1 = 0
+let precio2 = 0
+let precio3 = 0
+
+submit.onclick = ()=>{
+    for (element of precios){
+        if(servicio1.value===element.trabajo){
+            precio1 =element.precio
+        }
+    }for (element of precios){
+        if(servicio2.value===element.trabajo){
+            precio2 =element.precio
+        }
+    }for (element of precios){
+        if(servicio3.value===element.trabajo){
+            precio3 =element.precio
+        }
+    }
+    function suma(){
+        sumar = precio1+precio2+precio3
+        return sumar
+    }
+    alert(cliente.value+', seleccionaste: '+servicio1.value+' - '+servicio2.value+' - '+servicio3.value+'. Total $'+suma())
 }
-
-function recogerDatos(){
-
-    let nombreCliente = document.getElementById('nombre');
-
-    let corte = '';
-
-    let corteAdulto=document.getElementById('corteAdulto');
-    let corteNino=document.getElementById('corteNiño');
-    let pelarCero=document.getElementById('pelarCero');
-    let corteYBarba=document.getElementById('corteYBarba');
-    let ninguno=document.getElementById('ninguno');
-    if(corteAdulto.checked){
-        corte = corteAdulto.value
-    }else if (corteNino.checked){
-        corte = corteNino.value
-    }else if (pelarCero.checked){
-        corte = pelarCero.value
-    }else if (corteYBarba.checked){
-        corte = corteYBarba.value
-    }else if(ninguno.checked){
-        corte = ninguno.value
-    }
-
-    let barba = '';
-
-    let completa=document.getElementById('completa');
-    let rebajar=document.getElementById('soloRebaje');
-    let afeitar=document.getElementById('afeitar');
-    let ninguno2=document.getElementById('ninguno2');
-    if(completa.checked){
-        barba = completa.value
-    }else if (rebajar.checked){
-        barba = rebajar.value
-    }else if (afeitar.checked){
-        barba = afeitar.value
-    }else if(ninguno2.checked){
-        barba = ninguno2.value
-    }
-
-    let color = '';
-
-    let tintura=document.getElementById('tintura');
-    let reflejos=document.getElementById('reflejos');
-    let platinado=document.getElementById('platinado');
-    let ninguno3=document.getElementById('ninguno3');
-    if(tintura.checked){
-        color = tintura.value
-    }else if (reflejos.checked){
-        color = reflejos.value
-    }else if (platinado.checked){
-        color = platinado.value
-    }else if(ninguno3.checked){
-        color = ninguno3.value
-    }
-
-    let turno = nombreCliente.value+', seleccionaste los servicios: corte de cabello: '+corte+', barba: '+barba+', tintura '+color+'. Esperamos tu visita!'
-
-    alert(turno)
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
